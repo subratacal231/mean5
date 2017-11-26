@@ -1,0 +1,24 @@
+<div class="col-xs-12 col-sm-12 col-md-6">
+	<div style="background-color:#FFFFFF; border-radius:10px; height:500px; border-radius:5px;">
+		<br><br>
+		<b>Select Chart Type for Users:</b>
+		<select ng-model="itemSelected" ng-change="onCategoryChange(itemSelected)">
+		  <option value="PieChart">Pie Chart</option>
+		  <option value="BarGraph">Bar Graph</option>
+		</select>
+
+		<select ng-show="['PieChart', 'BarGraph'].indexOf(itemSelected) >= 0" ng-model="pieChartOption" ng-change="onPieChartCategoryChange(pieChartOption)">
+		  <option value="TotalAmount">Total Amount per User</option>
+		  <option value="TotalQuatity">Total Quantity per User</option>
+		  <option value="MaxQuantity">Max Quantity per User per Transaction</option>
+		</select>
+
+		<nvd3 options="options" data="data"></nvd3>
+		<!--<b>{{chartDescription}}</b>-->
+    </div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6">
+	<div style="background-color:#FFFFFF; border-radius:10px; height:500px; border-radius:5px; line-height: 500px; text-align: center;">
+		<b>{{chartDescription}}</b>
+	</div>
+</div>

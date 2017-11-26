@@ -1,0 +1,12 @@
+Step 1- Please run the sql/script given in the file "SQL-TO-RUN/athena_tbl_transaction.sql" in MySQL DB. It will create a DB named 'athena', a table named tbl_transaction, and insert records in tbl_transaction
+
+Step 2- Please set the NODE_ENV to development. Run command "set NODE_ENV = development" from application 
+
+Step 3- Open Node console and move to application root(mean5 directory). Run the command "node server"
+
+Step 4- Run the application by using URL "http://localhost:2900/mainview" from Google Chorme or Mozila Firefox
+
+**Do not need to run npm install as I have already uploaded the node_modules with all the required modules
+**Do not need to run bower install as most of the files for client side code are directly invoked from CDN.
+
+

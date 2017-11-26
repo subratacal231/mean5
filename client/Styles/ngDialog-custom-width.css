@@ -1,0 +1,23 @@
+.ngdialog.ngdialog-theme-plain.custom-width .ngdialog-content {
+    width: 70%;
+    /*height: 800px;*/
+    position: absolute;
+    top: 51;
+    left: 15%;
+    border-radius: 6px;
+    background-color: #C1C5C7;
+}
+
+.ngdialog.ngdialog-theme-plain.custom-width-signup .ngdialog-content {
+    width: 250px;
+    height: 553px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}

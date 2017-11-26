@@ -1,0 +1,12 @@
+﻿.grid {
+  width: 1000px;
+  height: 80px;
+}
+.LeftMenuMain{background-color:#FFFFFF; border-radius:5px; }
+/*overwriting this class from ui-grid.css*/
+.ui-grid-header-cell-wrapper {
+    position: relative;
+    display: table;
+    box-sizing: border-box;
+    height: 20px;
+}
