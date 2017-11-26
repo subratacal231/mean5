@@ -2,7 +2,13 @@ var sequelize = require('sequelize');
 var fs = require('fs');
 var path = require('path');
 
-var Sequelize = new sequelize('athena', 'root', 'admin',{host:'localhost',port:3306,dialect:'mysql'});
+if(process.env.NODE_ENV === 'test'){
+	var Sequelize = new sequelize('athena_test', 'root', 'admin',{host:'localhost',port:3306,dialect:'mysql'});
+}
+else{
+	var Sequelize = new sequelize('athena', 'root', 'admin',{host:'localhost',port:3306,dialect:'mysql'});
+}
+
 
 var db = {};
 db.models = {};

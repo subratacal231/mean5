@@ -29,9 +29,11 @@ module.exports = function(){
 
 	app.use(methodOverride());
 
-	app.use(session({saveUninitialized: true,
-					resave: true,
-					secret: config.sessionSecret}));
+	if(process.env.NODE_ENV != 'test'){
+		app.use(session({saveUninitialized: true,
+						resave: true,
+						secret: config.sessionSecret}));
+	}
 
 	require('../app/routes/index.server.route')(app); 
 	

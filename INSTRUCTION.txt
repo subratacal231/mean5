@@ -1,10 +1,13 @@
-Step 1- Please run the sql/script given in the file "SQL-TO-RUN/athena_tbl_transaction.sql" in MySQL DB. It will create a DB named 'athena', a table named tbl_transaction, and insert records in tbl_transaction
+Step 1- Please run the sql/script given in the file "SQL-TO-RUN/athena_tbl_transaction.sql" in MySQL DB. It will create a DB named 'athena', a table named tbl_transaction, and insert records in tbl_transaction. It will also create a DB named 'athena_test', a table named tbl_transaction, and insert records in tbl_transaction. athena_test DB will be used for running Mocha Test Cases.
 
 Step 2- Open Node console and move to application root(mean5 directory). Run the command "npm start". It will set the development environemnt and run the server.
 
 Step 3- Run the application by using URL "http://localhost:2900/mainview" from Google Chorme or Mozila Firefox
 
+Step 4- For running Automated test case move to application root (mean5 directory) and run the command "npm test".
+
 **Do not need to run npm install as I have already uploaded the node_modules with all the required modules
 **Do not need to run bower install as most of the files for client side code are directly invoked from CDN.
+**Ignore the bower.json file, currently it is of no use.
 
 

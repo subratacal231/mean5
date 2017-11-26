@@ -26,6 +26,6 @@
   },
   "scripts": {
     "start": "SET NODE_ENV=development&& node server.js",
-    "test": "mocha --timeout 20000"
+    "test": "SET NODE_ENV=test&& mocha --timeout 20000"
   }
 }
