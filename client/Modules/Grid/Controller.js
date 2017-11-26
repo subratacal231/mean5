@@ -16,11 +16,9 @@ configApp.controller('ConfigController',  function($scope, $rootScope, CallRestA
 	$scope.gridOptions = {
 	    enableFiltering: true,
 	    treeRowHeaderAlwaysVisible: false,
-      	//minRowsToShow:6,
-	    //excessRows:200, //This value is default 4. Lost couple min figuring it out
-	    //paginationPageSizes: [5, 10, 15],
-	    enablePaginationControls: false,
-    	paginationPageSize: 5,
+	    paginationPageSizes: [10, 15, 20],
+	    enablePaginationControls: true,
+    	paginationPageSize: 10,
 	    columnDefs: [
 			{ name: 'model', width: '12%' }, //model
 			{ name: 'brand', grouping: { groupPriority: 1 }, sort: { priority: 1, direction: 'asc' }, 
@@ -39,7 +37,8 @@ configApp.controller('ConfigController',  function($scope, $rootScope, CallRestA
 	      $scope.gridApi = gridApi;
 
 	       $scope.gridApi.grid.registerRowsProcessor($scope.singleFilter, 200);
-		   $scope.gridApi.treeBase.on.rowExpanded(null, function(row) {
+		   $scope.gridApi.treeBase.on.rowExpanded($scope, function(row) {
+		   	 console.log($scope);console.log('********************************************************');console.log(row);
 		     updatePagination(row.treeNode.children.length);
 		   });
 		   $scope.gridApi.treeBase.on.rowCollapsed(null, function(row) {
@@ -82,7 +81,6 @@ configApp.controller('ConfigController',  function($scope, $rootScope, CallRestA
 
   $scope.getAggregates = function() {
     var aggregatesTree = [];
-    //var gender;
 
     var recursiveExtract = function( treeChildren ) {
       return treeChildren.map( function( node ) {

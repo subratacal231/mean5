@@ -4,7 +4,7 @@ CREATE DATABASE `athena` /*!40100 DEFAULT CHARACTER SET utf8 */;
 --
 -- Host: 127.0.0.1    Database: athena
 -- ------------------------------------------------------
--- Server version	5.7.20-log
+-- Server version 5.7.20-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -47,7 +47,20 @@ CREATE TABLE `tbl_transaction` (
 
 LOCK TABLES `tbl_transaction` WRITE;
 /*!40000 ALTER TABLE `tbl_transaction` DISABLE KEYS */;
-INSERT INTO `tbl_transaction` VALUES (1,100,'Muthu','sports','nike','K13',2,5000,'2017-11-24 02:24:02'),(2,101,'Krishna','Electronics','Sony','b17',5,456,'2017-11-24 02:24:02'),(3,102,'Deva','Book','McGrawHill','j45',7,958,'2017-11-24 02:24:02'),(4,103,'Thiru','Electronics','Bose','d18',6,574,'2017-11-24 02:24:02'),(5,104,'Shyam','sports','Reebok','R17',6,369,'2017-11-24 02:24:02'),(6,105,'Dhinesh','Book','Flipkart','r90',1,5478,'2017-11-24 02:24:02'),(7,106,'Srini','Electronics','Samsung','s76',7,145,'2017-11-24 02:24:02'),(8,107,'Ganesh','sports','Adidas','A89',4,258,'2017-11-24 02:24:02'),(9,108,'Subrata','sports','Local','L31',3,743,'2017-11-24 02:24:02'),(10,109,'Babu','Electronics','LG','K13',1,156,'2017-11-24 02:24:02'),(11,110,'Geetha','sports','Adidas','A12',9,987,'2017-11-24 02:24:02'),(12,111,'Vamsi','Fashion','Polo','PO1',5,456,'2017-11-24 02:24:02'),(13,112,'Murthy','Book','Amazon','K13',3,478,'2017-11-24 02:24:02'),(14,113,'Bala','sports','Puma','P56',9,1300,'2017-11-24 02:24:02'),(15,114,'Subrata','Fashion','Levis','L15',8,4198,'2017-11-24 02:24:02'),(16,115,'Srini','Food','Britania','Buboune',12,2450,'2017-11-25 03:34:04'),(17,116,'Subrata','Fashion','Levis','K13',2,1900,'2017-11-25 07:37:04');
+INSERT INTO `tbl_transaction` VALUES (1,100,'Muthu','sports','nike','K13',2,5000,'2017-11-24 02:24:02'),(2,101,'Krishna','Electronics','Sony','b17',5,456,'2017-11-24 02:24:02'),(3,102,'Deva','Book','McGrawHill','j45',7,958,'2017-11-24 02:24:02'),(4,103,'Thiru','Electronics','Bose','d18',6,574,'2017-11-24 02:24:02'),(5,104,'Shyam','sports','Reebok','R17',6,369,'2017-11-24 02:24:02'),(6,105,'Dhinesh','Book','Flipkart','r90',1,5478,'2017-11-24 02:24:02'),(7,106,'Srini','Electronics','Samsung','s76',7,145,'2017-11-24 02:24:02'),(8,107,'Ganesh','sports','Adidas','A89',4,258,'2017-11-24 02:24:02'),(9,108,'Subrata','sports','Local','L31',3,743,'2017-11-24 02:24:02'),(10,109,'Babu','Electronics','LG','K13',1,156,'2017-11-24 02:24:02'),(11,110,'Geetha','sports','Adidas','A12',9,987,'2017-11-24 02:24:02'),(12,111,'Vamsi','Fashion','Polo','PO1',5,456,'2017-11-24 02:24:02'),(13,112,'Murthy','Book','Amazon','K13',3,478,'2017-11-24 02:24:02'),(14,113,'Bala','sports','Puma','P56',9,1300,'2017-11-24 02:24:02'),(15,114,'Subrata','Fashion','Levis','L15',8,4198,'2017-11-24 02:24:02'),(16,115,'Srini','Food','Britania','Buboune',12,2450,'2017-11-25 03:34:04'),(17,116,'Subrata','Fashion','Levis','K13',2,1900,'2017-11-25 07:37:04'),
+(18,117,'Subrata','sports','nike','K3',2,5000,'2017-11-25 02:24:02'),
+(19,118,'Sonia','sports','Adidas','K13',2,5000,'2017-11-24 02:24:02'),
+(20,119,'Subrata','sports','nike','K12',1,8000,'2017-11-24 02:24:02'),
+(21,120,'Anish','Book','McGrawHill','K13',2,5000,'2017-11-24 02:24:02'),
+(22,121,'Laxman','sports','nike','K12',5,7000,'2017-11-24 02:24:02'),
+(23,122,'Ram','sports','nike','K13',2,5000,'2017-11-24 02:24:02'),
+(24,123,'Srini','Electronics','Bose','K17',3,13000,'2017-11-24 02:24:02'),
+(25,124,'Byju','sports','nike','K13',2,6000,'2017-11-24 02:24:02'),
+(26,125,'Neethi','sports','nike','K20',2,6000,'2017-11-24 02:24:02'),
+(27,126,'Muthu','Electronics','Bose','K13',1,3000,'2017-11-24 02:24:02'),
+(28,127,'Sooraj','sports','nike','K09',2,1000,'2017-11-24 02:24:02'),
+(29,128,'Madan','Book','McGrawHill','K13',3,5000,'2017-11-24 02:24:02'),
+(30,129,'Mohan','sports','nike','K10',2,5000,'2017-11-24 02:24:02');
 /*!40000 ALTER TABLE `tbl_transaction` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

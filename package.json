@@ -18,5 +18,14 @@
     "mysql": "^2.15.0",
     "mysql2": "^1.5.0",
     "sequelize": "^4.22.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "start": "SET NODE_ENV=development&& node server.js",
+    "test": "mocha --timeout 20000"
   }
 }

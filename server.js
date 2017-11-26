@@ -5,5 +5,5 @@ var app = express();
 
 app.listen(2900);
 //console.log(__dirname);
-//return app;
+//return app; //Open it when testing is needed
 console.log('Server running at port 2900');
